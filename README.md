@@ -16,7 +16,7 @@
 
 ### Ali: onderdeel 4
 
-### Yusuf: onderdeel 1
+### Yusuf: onderdeel 2
 
-### Abdallah: 2
+### Abdallah: 1
 "# duurzaam-huis" 
