@@ -4,7 +4,7 @@ Chart.defaults.font.size =15;
 
 var ctx = document.getElementById('myChart2');
 
-var stars = [11, 15, 13, 9, 15, 17, 10];
+var stars = [5, 18, 13, 5, 18, 21, 10];
 var frameworks = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'];
 
 var myChart = new Chart(ctx, {
