@@ -1,4 +1,4 @@
-# Duurzaam Huis SD1D
+# Duurzaam Huis  klas: SD1D
 
 ## Ali Yusuf en Abdallah
 
