@@ -20,4 +20,6 @@
 ### Yusuf: onderdeel 2
 
 ### Abdallah: 1
-"# duurzaam-huis" 
+
+
+# Sommige dingen kunnen wel veranderen
