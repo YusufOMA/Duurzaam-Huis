@@ -13,7 +13,7 @@
 
 ### Abdallah: 1, 2 en 8
 
-## onderdelen kiezen in categorie 2
+## Welke onderdelen hebben wij gekozen uit categorie 2?
 
 ### Ali: onderdeel 4
 
