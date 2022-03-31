@@ -7,11 +7,20 @@
 ## taken
 ## Van onze groepsleden
 
-### Ali: 1, 2 en 3
+### Ali: 3, 6 & 8   
 
 ### Yusuf:  2, 4 en 8 namelijk: energieverbruik in de buurt.
 
 ### Abdallah: 1, 2 en 8
+
+
+
+
+
+
+
+
+
 
 ## Welke onderdelen hebben wij gekozen uit categorie 2?
 
