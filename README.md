@@ -9,7 +9,7 @@
 
 ### Ali: 1, 2 en 3
 
-### Yusuf: 1, 2 en 3
+### Yusuf:  2, 4 en 8 namelijk: energieverbruik in de buurt.
 
 ### Abdallah: 1, 2 en 8
 
@@ -17,7 +17,7 @@
 
 ### Ali: onderdeel 4
 
-### Yusuf: onderdeel 2
+### Yusuf: onderdeel 3
 
 ### Abdallah: 1
 
