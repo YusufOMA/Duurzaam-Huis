@@ -1,16 +1,19 @@
 // Ali code
 
+Chart.defaults.font.size =15;
+
+var cntxt = document.getElementById('myChart5');
+
 var KWH = [5, 18, 13, 5, 18, 21, 10 ];
 var week = ['week1', 'week2', 'week3', 'week4', 'week5', 'week6', 'week7'];
-var cntxt = document.getElementById('myChart5');
 
 var myChart = new Chart(cntxt, {
     type: 'pie',
+
    data: {
        labels: week,
-      datasets: [
-           {
-               label: 'Water verbruik per week in liter',
+      datasets: [{
+               label: 'Water verbruik in L',
                data: KWH,
                backgroundColor: [
                     "#3a86d6",
@@ -29,5 +32,13 @@ var myChart = new Chart(cntxt, {
           }
        ]
   },
-
+  options: {
+    plugins:{
+      title: {
+        display:true,
+        text: "Watergebruik in L",
+        position: 'top',
+      }
+    }
+  }
 });

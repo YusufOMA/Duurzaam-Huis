@@ -5,7 +5,7 @@ Chart.defaults.font.size =15;
 
 var ctx = document.getElementById('myChart');
 
-var stars = [4, 2, 3, 6, 5];
+var stars = [12, 16, 15, 9, 9];
 var frameworks = ['Slaapkamer', 'Klaslokaal', 'Kantoor', 'WC', 'Badkamer']; 
 
 var myChart = new Chart(ctx, {

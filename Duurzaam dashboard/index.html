@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="js/script6.js" defer></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     <title>Dashboard</title>
-    
+
 
 </head>
+
 <body onload="initClock()">
-    
-   
-   <article class="card">       
-    <canvas id="myChart" width="800" height="400"></canvas>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-            <script src="js/script.js"></script>
+
+
+    <article class="card">
+        <canvas id="myChart" width="800" height="400"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+        <script src="js/script.js"></script>
     </article>
 
-    <article class="card">       
+    <article class="card">
         <div>
             <h1>🌅 Zonsopgang</h1>
         </div>
@@ -27,89 +32,123 @@
         <div>
             <h1>🌇 Zonsondergang</h1>
         </div>
-        <h3  class="h3">19:01</h3>
-    
+        <h3 class="h3">19:01</h3>
+
     </article>
 
-    <article class="card">       
-        <canvas id="myChart2" width="800" height="400"></canvas>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-                <script src="js/script2.js"></script>
-        </article>
+    <article class="card">
+        <canvas id="myChart3" width="800" height="400"></canvas>
+        <script src="js/script3.js"></script>
+    </article>
 
-        <article class="card">       
-            <canvas id="myChart3" width="800" height="400"></canvas>
-                    <script src="js/script3.js"></script>
-            </article>
 
-        
-                <article class="card">
-                    <canvas id="myChart5" width="800" height="400"></canvas>
-                        <script src="js/script5.js" ></script> 
-                </article>
+    <article class="card">
+        <canvas id="myChart5" width="800" height="400"></canvas>
+        <script src="js/script5.js"></script>
+    </article>
 
-        <article class="card">       
-            <canvas id="myChart4" width="800" height="400"></canvas>
-                <script src="js/script4.js"></script>
-        </article>
+    <article class="card">
+        <canvas id="myChart4" width="800" height="400"></canvas>
+        <script src="js/script4.js"></script>
+    </article>
 
-        
+    <article id="sunrise" class="card1">
+        <p id='location1'></p>
+        <p id='weather1'></p>
+              <p id="weather1"> 🌅 Zonsopgang:</p>
+        <p id='temp1'></p>
+        <p id='sunrise1'></p>
+        <p id="weather1">🌇 Zonsondergang:</p>
+    </article>
 
-<article class="card">
-    <div class="datetime">
-        <div class="date">
-            <span id="dayname">Day</span>,
-            <span id="month">Month</span>
-            <span id="daynum">00</span>,
-            <span id="year">year</span>
+    <article class="card">
+        <div class="container">
+            <div class="card">
+                <h2><i class="fa fa-map-marker"></i> <span id="location"></span></h2>
+                <h6 id="weather"></h6>
+                <h4><span id="temp"></span><sup>0</sup>C</h4>
+                <img src="" id="icon">
+                <button onclick="window.location.reload();" class="refresh"><i class="fa fa-refresh"></i></button>
+            </div>
         </div>
-    <div class="time">
-        <span id="hour">00</span>:
-        <span id="minutes">00</span>:
-        <span id="seconds">00</span>
-        <span id="period">AM</span>
-    </div>
-    </div>
-
-    <!--digital clock end-->
+    </body>
     <script type="text/javascript">
-        function updateClock(){
-            var now = new Date();
-            var dname = now.getDay(),
-                mo = now.getMonth()
-                dnum = now.getDate(),
-                yr = now.getFullYear()
-                hou = now.getHours(),
-                min = now.getMinutes()
-                sec = now.getSeconds(),
-                pe = "AM";
+        link = "https://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=35c621e8046ba673b4c87627b96fc479";
+        var request = new XMLHttpRequest();
+        request.open('Get',link,true);
+        request.onload = function(){
+            var obj = JSON.parse(this.response);
+            console.log(obj);
+            document.getElementById('weather').innerHTML = obj.weather[0].description;
+            document.getElementById('location').innerHTML = obj.name;
+            document.getElementById('temp').innerHTML = obj.main.temp - 273.15;
+            document.getElementById('icon').src = "http://openweathermap.org/img/w/"+obj.weather[0].icon+".png";
+        }
+        if(request.status==200){
+            console.log("ERROR");
+        }
+        request.send();
+    </script>
+    </article>
 
-                if(hou == 0){
+
+
+
+    <article class="card">
+        <div class="datetime">
+            <div class="date">
+                <span id="dayname">Day</span>,
+                <span id="month">Month</span>
+                <span id="daynum">00</span>,
+                <span id="year">year</span>
+            </div>
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+        </div>
+
+        <!--digital clock end-->
+        <script type="text/javascript">
+            function updateClock() {
+                var now = new Date();
+                var dname = now.getDay(),
+                    mo = now.getMonth()
+                dnum = now.getDate(),
+                    yr = now.getFullYear()
+                hou = now.getHours(),
+                    min = now.getMinutes()
+                sec = now.getSeconds(),
+                    pe = "AM";
+
+                if (hou == 0) {
                     hou = 12;
                 }
-                if(hou > 12){
+                if (hou > 12) {
                     hou = hou - 12;
                     pe = "PM"
                 }
 
-                Number.prototype.pad = function(digits){
-                    for(var n = this.toString(); n.length < digits; n = 0 + n);
+                Number.prototype.pad = function (digits) {
+                    for (var n = this.toString(); n.length < digits; n = 0 + n);
                     return n;
                 }
- var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                 var week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-                var ids= ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period" ];
+                var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "period"];
                 var values = [week[dname], months[mo], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
-                for(var i = 0; i < ids.length; i++)
-                document. getElementById(ids[i]).firstChild.nodeValue = values[i];
-        }
-        
-        function initClock(){
-            updateClock();
-            window.setInterval("updateClock()", 1);
+                for (var i = 0; i < ids.length; i++)
+                    document.getElementById(ids[i]).firstChild.nodeValue = values[i];
+            }
 
-        }
-    </script>
-</article>
-    
+            function initClock() {
+                updateClock();
+                window.setInterval("updateClock()", 1);
+
+            }
+        </script>
+    </article>
+
 </body>
