@@ -7,7 +7,7 @@
 ## taken
 ## Van onze groepsleden
 
-### Ali: 3, 6 & 8   
+### Ali: 3, 6   
 
 ### Yusuf:  2, 4 en 8 namelijk: energieverbruik in de buurt.
 
