@@ -26,7 +26,9 @@
 
 ### Ali: onderdeel 4
 
-### Yusuf: onderdeel 3
+### Yusuf: 6 namelijk de energieverbruik van de buurt
+
+
 
 ### Abdallah: 1
 
