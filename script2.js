@@ -1,26 +1,26 @@
-// Ali code
+ //Ali code
 
 Chart.defaults.font.size =15;
 
 var ctx = document.getElementById('myChart2');
 
-var stars = [5, 18, 13, 5, 18, 21, 10];
+var stars = [3.40, 3.65, 2.86, 3.18, 2.39, 3.45, 3,53];
 var frameworks = ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7'];
 
 var myChart = new Chart(ctx, {
  type: 'line',
 
- data: {
+ data: {//
     labels: frameworks,
     datasets: [{
-        label: 'Watergebruik in L',
-        data: stars,
+        label: 'Gasgebruik in m3',
+       data: stars,
         backgroundColor: [
-   
+  
         ],
 
         borderColor: [
-        "rgba(66, 130, 132, 0.5)",
+       "rgba(66, 130, 132, 0.5)",
         "rgba(54, 162, 235, 0.5)",
         "rgba(150, 206, 86, 0.5)",
         "rgba(75, 255, 192, 0.5)",
@@ -28,10 +28,10 @@ var myChart = new Chart(ctx, {
         "rgba(75, 192, 54, 0.5)",
         "rgba(153, 102, 255, 0.5)",
         ],
-        borderRadius: 5,
+       borderRadius: 5,
         borderWidth: 3,
         barPercentage: 1
-                }]
+               }]
         },
  
  options: {
@@ -40,13 +40,13 @@ var myChart = new Chart(ctx, {
         grid: {
           display: false,
               }
-            },
-        y: {
+           },
+       y: {
         grid: {
           display: false,
               }
             }
-           }
-         },
+          }
+        },
 
 });

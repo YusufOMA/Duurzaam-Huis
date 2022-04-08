@@ -1,3 +1,7 @@
+// Ali code
+
+
+
 link = "https://api.openweathermap.org/data/2.5/weather?q=Amsterdam&appid=404c06892ba05219fddc565047c32644&units=metric";
 var request = new XMLHttpRequest();
 request.open('GET',link,true);

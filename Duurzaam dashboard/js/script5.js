@@ -4,7 +4,7 @@ Chart.defaults.font.size =15;
 
 var cntxt = document.getElementById('myChart5');
 
-var KWH = [5, 18, 13, 5, 18, 21, 10 ];
+var KWH = [2.7, 1.25, 2.1, 1.9, 2.6, 2.9, 1.54 ];
 var week = ['week1', 'week2', 'week3', 'week4', 'week5', 'week6', 'week7'];
 
 var myChart = new Chart(cntxt, {

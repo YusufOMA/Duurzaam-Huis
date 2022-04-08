@@ -1,4 +1,4 @@
-
+    
 
     function updateClock() {
         var now = new Date();
