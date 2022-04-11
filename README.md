@@ -24,7 +24,7 @@
 
 ## Welke onderdelen hebben wij gekozen uit categorie 2?
 
-### Ali: onderdeel 4, 6 namelijk een grafische weergaven van de gasverbruik van de afgelopen week
+### Ali: onderdeel 4
 
 ### Yusuf: 6 namelijk de energieverbruik van de buurt
 
