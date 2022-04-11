@@ -30,7 +30,7 @@
                  let datum =  new Date(measurement.datum);
                
                  // De meting gegevens wegschrijven naar de div                
-                 dataDiv1.innerHTML = `<h3>Datum: ${datum.toLocaleString()}</h3><p>Sensor: ${measurement.sensor} 
+                 dataDiv1.innerHTML = `<h3>Binnentemperatuur: </h3><p>Sensor: ${measurement.sensor} 
                     &nbsp;
                     <p>Kamer :</p>
                     </p><p>Temperature: ${measurement.value1}
